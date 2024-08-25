@@ -1,0 +1,28 @@
+body {
+  background-color: #e0f1e7;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  height: 500px;
+  width: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.first-name,
+.last-name,
+.email {
+  display: flex;
+  flex-direction: column;
+}
