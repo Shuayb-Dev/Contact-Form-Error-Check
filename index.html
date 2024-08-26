@@ -12,29 +12,34 @@
       href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js"></script>
+    <script src="/index.js"></script>
   </head>
   <body>
     <main>
       <div class="contact-form">
         <div class="form">
           <h1>Contact Us</h1>
-          <form>
+
+          <form name="myForm" required>
             <div class="name">
               <div class="first-name">
                 <label for="name">First Name *</label>
-                <input type="text" id="name" />
+                <input type="text" name="fname" />
+                <span class="error-message" id="fname-error"></span>
               </div>
+            </form>
 
               <div class="last-name">
                 <label class="last-name" for="last-name">Last Name * </label>
-                <input type="text" id="last-name" />
+                <input type="text" name="last-name" id="lname" />
+                <span class="lname-error-message" id="lname-error"></span>
               </div>
             </div>
 
             <div class="email">
               <label for="email">Email Address</label>
               <input type="email" id="email" />
+              <span class="email-error-message" id="email-error"></span>
             </div>
 
             <h2>Query Type *</h2>
@@ -42,6 +47,7 @@
               <div class="general-enquiry">
                 <input type="radio" id="general-enquiry" name="enquiry" />
                 <label for="general-enquiry">General Enquiry</label>
+                <span class="gEnquiry-error-message" id="gEnquiry-error"></span>
               </div>
 
               <div class="support-enquiry">
@@ -68,9 +74,9 @@
             </div>
 
             <div class="button-container">
-              <button type="submit">Submit</button>
+              <button onclick="firstName();secondName();emailCheck(); gEnquiryCheck();">Submit</button>
             </div>
-          </form>
+          
         </div>
       </div>
     </main>
