@@ -71,3 +71,23 @@ function emailCheck() {
     return true;
   }
 }
+
+function gEnquiryCheck() {
+  // Get the radio button and error message elements
+  let radio1 = document.getElementById("general-enquiry");
+  let radioErrorMessage = document.getElementById("gEnquiry-error");
+  let generalEnquiryDiv = document.querySelector(".general-enquiry");
+
+  if (radio1.checked) {
+    // Hide error message and remove error styling if checked
+    radioErrorMessage.style.display = "none";
+    generalEnquiryDiv.classList.remove("error");
+    return true; // Allow form submission if checked
+  } else {
+    // Display the error message and add error styling to the general enquiry radio button
+    radioErrorMessage.style.display = "block";
+    radioErrorMessage.textContent = "Please select a query type.";
+    generalEnquiryDiv.classList.add("error");
+    return false; // Prevent form submission
+  }
+}

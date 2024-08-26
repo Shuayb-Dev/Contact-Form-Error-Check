@@ -25,7 +25,8 @@ body {
 
 .error-message,
 .email-error-message,
-.lname-error-message {
+.lname-error-message,
+.gEnquiry-error-message {
   color: red;
   font-size: 15px;
   display: none;
@@ -33,6 +34,14 @@ body {
   margin-top: 10px;
 }
 
+/* Apply border to the container when there's an error */
+.general-enquiry.error {
+  border: 1px solid red;
+  padding: 5px; /* Optional: Add padding to ensure border visibility */
+  border-radius: 5px; /* Optional: Add border radius for styling */
+}
+
+/* Style the radio button directly if needed */
 input.error {
   border: 1px solid red !important;
 }

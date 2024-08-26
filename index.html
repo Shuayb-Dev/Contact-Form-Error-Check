@@ -47,6 +47,7 @@
               <div class="general-enquiry">
                 <input type="radio" id="general-enquiry" name="enquiry" />
                 <label for="general-enquiry">General Enquiry</label>
+                <span class="gEnquiry-error-message" id="gEnquiry-error"></span>
               </div>
 
               <div class="support-enquiry">
@@ -73,7 +74,7 @@
             </div>
 
             <div class="button-container">
-              <button onclick="firstName();secondName();emailCheck();">Submit</button>
+              <button onclick="firstName();secondName();emailCheck(); gEnquiryCheck();">Submit</button>
             </div>
           
         </div>
