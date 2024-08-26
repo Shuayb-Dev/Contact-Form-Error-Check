@@ -23,6 +23,20 @@ body {
   bottom: 30px;
 }
 
+.error-message,
+.email-error-message,
+.lname-error-message {
+  color: red;
+  font-size: 15px;
+  display: none;
+  font-family: "Karla", sans-serif;
+  margin-top: 10px;
+}
+
+input.error {
+  border: 1px solid red !important;
+}
+
 .name {
   display: flex;
   flex-direction: row;
