@@ -44,6 +44,7 @@
 
             <h2>Query Type *</h2>
             <div class="enquiry">
+
               <div class="general-enquiry">
                 <input type="radio" id="general-enquiry" name="enquiry" />
                 <label for="general-enquiry">General Enquiry</label>
@@ -53,6 +54,7 @@
               <div class="support-enquiry">
                 <input type="radio" id="support-enquiry" name="enquiry" />
                 <label for="support-enquiry">Support Enquiry</label>
+                <span class="sEnquiry-error-message" id="sEnquiry-error"></span>
               </div>
             </div>
 
@@ -74,7 +76,7 @@
             </div>
 
             <div class="button-container">
-              <button onclick="firstName();secondName();emailCheck(); gEnquiryCheck();">Submit</button>
+              <button onclick="firstName();secondName();emailCheck(); gEnquiryCheck();sEnquiryCheck();">Submit</button>
             </div>
           
         </div>
