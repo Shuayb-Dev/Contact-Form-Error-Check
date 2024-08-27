@@ -26,7 +26,8 @@ body {
 .error-message,
 .email-error-message,
 .lname-error-message,
-.gEnquiry-error-message {
+.gEnquiry-error-message,
+.sEnquiry-error-message {
   color: red;
   font-size: 15px;
   display: none;
@@ -39,6 +40,14 @@ body {
   border: 1px solid red;
   padding: 5px; /* Optional: Add padding to ensure border visibility */
   border-radius: 5px; /* Optional: Add border radius for styling */
+}
+
+.support-enquiry.error {
+  border: 1px solid red;
+  padding: 5px; /* Optional: Add padding to ensure border visibility */
+  border-radius: 5px; /* Optional: Add border radius for styling */
+  width: 280px;
+  height: 20px;
 }
 
 /* Style the radio button directly if needed */

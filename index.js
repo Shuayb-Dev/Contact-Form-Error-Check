@@ -91,3 +91,25 @@ function gEnquiryCheck() {
     return false; // Prevent form submission
   }
 }
+
+function sEnquiryCheck() {
+  // Get the radio button and error message elements
+  let radio2 = document.getElementById("support-enquiry");
+  let radioErrorMessage = document.getElementById("sEnquiry-error");
+  let supportEnquiryDiv = document.querySelector(".support-enquiry");
+
+  if (radio2.checked) {
+    // Hide error message and remove error styling if checked
+    radioErrorMessage.style.display = "none";
+    supportEnquiryDiv.classList.remove("error");
+    // Allow form submission if checked
+    return true;
+  } else {
+    // Display the error message and add error styling to the support enquiry radio button
+    radioErrorMessage.style.display = "block";
+    radioErrorMessage.textContent = "Please select a query type.";
+    supportEnquiryDiv.classList.add("error");
+    // Prevent form submission
+    return false;
+  }
+}
