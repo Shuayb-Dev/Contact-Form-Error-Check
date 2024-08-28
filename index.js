@@ -7,6 +7,7 @@ function firstName() {
   if (fnameInput.value.trim() === "") {
     // Add the error class to the input field
     fnameInput.classList.add("error");
+    fnameInput.classList.remove("valid");
 
     // Display the error message
     errorMessage.style.display = "block";
@@ -15,13 +16,24 @@ function firstName() {
     // Prevent form submission
     return false;
   } else {
-    // Remove error styling if input is valid
+    // Remove error styling if input is valid and add valid styling
     fnameInput.classList.remove("error");
     errorMessage.style.display = "none";
 
     // Allow form submission if no error
     return true;
   }
+}
+
+function applyValidClass() {
+  // Get the input field element
+  let fnameInput = document.getElementById("fname");
+  let lnameInput = document.getElementById("lname");
+  let emailInput = document.getElementById("email");
+
+  // Add the 'valid' class to the input field
+  fnameInput.classList.add("valid");
+  lnameInput.classList.add("valid");
 }
 
 function secondName() {
@@ -111,5 +123,52 @@ function sEnquiryCheck() {
     supportEnquiryDiv.classList.add("error");
     // Prevent form submission
     return false;
+  }
+}
+
+function myCheckbox() {
+  // Get the checkbox and error message elements
+  let checkBox = document.getElementById("consent");
+  let checkBoxErrorMessage = document.getElementById("checkbox-error");
+  let consentDiv = document.querySelector(".consent");
+
+  if (checkBox.checked) {
+    // Hide error message and remove error styling if checked
+    checkBoxErrorMessage.style.display = "none";
+    consentDiv.classList.remove("error");
+    // Allow form submission if checked
+    return true;
+  } else {
+    // Display the error message and add error styling to the checkbox
+    checkBoxErrorMessage.style.display = "block";
+    checkBoxErrorMessage.textContent =
+      "To Submit this form, please consent to being contacted";
+    consentDiv.classList.add("error");
+    // Prevent form submission
+    return false;
+  }
+}
+
+function messageCheck() {
+  // Get the input field and error message elements
+  let messageInput = document.getElementById("message");
+  let messageError = document.getElementById("message-error");
+
+  // Check if the field is empty
+  if (messageInput.value.trim() === "") {
+    // Add the error class to the input field
+    messageInput.classList.add("error");
+
+    // Display the error message
+    messageError.style.display = "Block";
+    messageError.textContent = "This field is required.";
+    // Prevent form submission
+    return false;
+  } else {
+    // Remove error styling if input is valid
+    messageError.display.style = "none";
+    messageInput.classList.remove("error");
+    // Allow form submission if no error
+    return true;
   }
 }
