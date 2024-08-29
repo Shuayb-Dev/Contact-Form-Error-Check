@@ -34,7 +34,7 @@ function applyValidClass() {
   let sEnquiryDiv = document.querySelector(".support-enquiry");
   let messageInput = document.getElementById("message");
 
-  // Add the 'valid' class to the input field
+  // Add the 'valid' class to the input field to ensure validation
   fnameInput.classList.add("valid");
   lnameInput.classList.add("valid");
   emailInput.classList.add("valid");
