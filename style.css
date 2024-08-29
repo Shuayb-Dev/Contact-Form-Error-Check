@@ -37,7 +37,11 @@ body {
 }
 
 .first-name input.valid,
-.last-name input.valid {
+.last-name input.valid,
+.email input.valid,
+.general-enquiry.valid,
+.support-enquiry.valid,
+.message textarea.valid {
   border: 1px solid hsl(169, 82%, 27%) !important; /* Use !important to ensure this style is applied */
 }
 .message-error-message {
@@ -167,4 +171,10 @@ button {
 textarea {
   resize: none;
   border-radius: 10px;
+}
+
+.general-enquiry label,
+.support-enquiry label {
+  position: relative;
+  bottom: 2px;
 }
