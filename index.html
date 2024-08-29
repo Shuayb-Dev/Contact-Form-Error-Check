@@ -38,7 +38,7 @@
 
             <div class="email">
               <label for="email">Email Address</label>
-              <input type="email" id="email" />
+              <input type="email" id="email" onclick="applyValidClass()" />
               <span class="email-error-message" id="email-error"></span>
             </div>
 
@@ -46,24 +46,25 @@
             <div class="enquiry">
 
               <div class="general-enquiry">
-                <input type="radio" id="general-enquiry" name="enquiry" />
+                <input type="radio" id="general-enquiry" name="enquiry" onclick="applyValidClass()"/>
                 <label for="general-enquiry">General Enquiry</label>
                 <span class="gEnquiry-error-message" id="gEnquiry-error"></span>
               </div>
 
               <div class="support-enquiry">
-                <input type="radio" id="support-enquiry" name="enquiry" />
+                <input type="radio" id="support-enquiry" name="enquiry" onclick="applyValidClass()" />
                 <label for="support-enquiry">Support Enquiry</label>
                 <span class="sEnquiry-error-message" id="sEnquiry-error"></span>
               </div>
             </div>
 
             <h2>Message *</h2>
-            <div class="message">
+            <div class="message" >
               <textarea
+                onclick="applyValidClass()" 
                 name="message"
                 id="message"
-                cols="72"
+                cols="79"
                 rows="10"
               ></textarea>
               <span class="message-error-message" id="message-error"></span>

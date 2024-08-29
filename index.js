@@ -30,10 +30,17 @@ function applyValidClass() {
   let fnameInput = document.getElementById("fname");
   let lnameInput = document.getElementById("lname");
   let emailInput = document.getElementById("email");
+  let generalEnquiryDiv = document.querySelector(".general-enquiry");
+  let sEnquiryDiv = document.querySelector(".support-enquiry");
+  let messageInput = document.getElementById("message");
 
-  // Add the 'valid' class to the input field
+  // Add the 'valid' class to the input field to ensure validation
   fnameInput.classList.add("valid");
   lnameInput.classList.add("valid");
+  emailInput.classList.add("valid");
+  generalEnquiryDiv.classList.add("valid");
+  sEnquiryDiv.classList.add("valid");
+  messageInput.classList.add("valid");
 }
 
 function secondName() {
