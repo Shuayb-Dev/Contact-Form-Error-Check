@@ -52,23 +52,17 @@ body {
 }
 
 /* Apply border to the container when there's an error */
-.general-enquiry.error {
+.general-enquiry.error,
+.support-enquiry.error {
   border: 1px solid red;
   padding: 5px; /* Optional: Add padding to ensure border visibility */
   border-radius: 5px; /* Optional: Add border radius for styling */
+  width: 263px;
 }
 
 .message textarea.error {
   border: 1px solid red;
   border-radius: 5px; /* Optional: Add border radius for styling */
-}
-
-.support-enquiry.error {
-  border: 1px solid red;
-  padding: 5px; /* Optional: Add padding to ensure border visibility */
-  border-radius: 5px; /* Optional: Add border radius for styling */
-  width: 280px;
-  height: 20px;
 }
 
 /* Style the radio button directly if needed */
@@ -178,7 +172,7 @@ h1 {
 }
 
 label,
-h2 {
+h4 {
   font-family: "Karla", sans-serif;
   color: hsl(187, 24%, 22%);
   font-weight: 400;
@@ -224,4 +218,89 @@ textarea {
 
 .consent input[type="checkbox"] {
   accent-color: hsl(169, 82%, 27%);
+}
+
+textarea {
+  border-color: hsl(186, 15%, 59%);
+}
+
+@media screen and (max-width: 500px) {
+  .contact-form {
+    width: 300px;
+    position: relative;
+    left: 80px;
+    bottom: 50px;
+    height: 1000px;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .enquiry {
+    display: flex;
+    flex-direction: column;
+  }
+
+  textarea {
+    height: 15em;
+    width: 20em;
+    border-color: hsl(186, 15%, 59%);
+  }
+
+  .form {
+    position: relative;
+    left: 10px;
+  }
+
+  .email input {
+    width: 268px;
+  }
+
+  h1,
+  .first-name,
+  .last-name,
+  .email,
+  .enquiry,
+  .message,
+  .consent,
+  h4,
+  .button-container {
+    position: relative;
+    bottom: 120px;
+  }
+
+  .last-name,
+  .email,
+  .enquiry,
+  .message,
+  .consent,
+  h4,
+  .button-container {
+    position: relative;
+    bottom: 150px;
+  }
+
+  .lasy-name label {
+    position: relative;
+    top: 30px;
+  }
+
+  .consent {
+    width: 290px;
+    justify-content: center;
+  }
+
+  button {
+    width: 200px;
+    position: relative;
+    right: 165px;
+  }
+
+  .notification {
+    position: relative;
+    bottom: 30px;
+    z-index: 1;
+  }
 }
