@@ -108,7 +108,7 @@ input.error {
 }
 
 .email input {
-  height: 30px;
+  height: 35px;
   width: 595px;
   border-radius: 5px;
   border: solid 1px hsl(186, 15%, 59%);
@@ -132,6 +132,7 @@ input.error {
 h1 {
   font-family: "Karla", sans-serif;
   font-size: 2rem;
+  color: hsl(180, 16%, 19%);
 }
 
 label,
@@ -177,4 +178,8 @@ textarea {
 .support-enquiry label {
   position: relative;
   bottom: 2px;
+}
+
+.consent input[type="checkbox"] {
+  accent-color: hsl(169, 82%, 27%);
 }
