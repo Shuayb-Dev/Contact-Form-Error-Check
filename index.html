@@ -16,6 +16,11 @@
   </head>
   <body>
     <main>
+      <div class="notification" id="notification">
+        <h3><img src="images/icon-success-check.svg"/>Message Sent!</h3>
+        <p>Thanks for completing the form. We'll be in touch soon.</p>
+      </div>
+
       <div class="contact-form">
         <div class="form">
           <h1>Contact Us</h1>
@@ -30,7 +35,7 @@
             </form>
 
               <div class="last-name">
-                <label class="last-name" for="last-name">Last Name * </label>
+                <label class="last-namee" for="last-name">Last Name * </label>
                 <input type="text" name="last-name" id="lname" onclick="applyValidClass()" />
                 <span class="lname-error-message" id="lname-error"></span>
               </div>
@@ -42,7 +47,7 @@
               <span class="email-error-message" id="email-error"></span>
             </div>
 
-            <h2>Query Type *</h2>
+            <h4>Query Type *</h4>
             <div class="enquiry">
 
               <div class="general-enquiry">
@@ -58,7 +63,7 @@
               </div>
             </div>
 
-            <h2>Message *</h2>
+            <h4>Message *</h4>
             <div class="message" >
               <textarea
                 onclick="applyValidClass()" 
@@ -79,7 +84,7 @@
             </div>
 
             <div class="button-container">
-              <button onclick="firstName();secondName();emailCheck(); gEnquiryCheck();sEnquiryCheck();messageCheck();myCheckbox(); ">Submit</button>
+              <button onclick="firstName();secondName();emailCheck(); gEnquiryCheck();sEnquiryCheck();messageCheck();myCheckbox(); displayNotification();">Submit</button>
             </div>
           
         </div>
