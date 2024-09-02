@@ -16,6 +16,11 @@
   </head>
   <body>
     <main>
+      <div class="notification" id="notification">
+        <h3><img src="images/icon-success-check.svg"/>Message Sent!</h3>
+        <p>Thanks for completing the form. We'll be in touch soon.</p>
+      </div>
+
       <div class="contact-form">
         <div class="form">
           <h1>Contact Us</h1>
@@ -79,7 +84,7 @@
             </div>
 
             <div class="button-container">
-              <button onclick="firstName();secondName();emailCheck(); gEnquiryCheck();sEnquiryCheck();messageCheck();myCheckbox(); ">Submit</button>
+              <button onclick="firstName();secondName();emailCheck(); gEnquiryCheck();sEnquiryCheck();messageCheck();myCheckbox(); displayNotification();">Submit</button>
             </div>
           
         </div>

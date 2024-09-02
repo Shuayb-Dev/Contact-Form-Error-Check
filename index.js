@@ -179,3 +179,10 @@ function messageCheck() {
     return true;
   }
 }
+
+function displayNotification() {
+  let notification = document.getElementById("notification");
+
+  // Add the 'show' class to start the transition
+  notification.classList.add("show");
+}

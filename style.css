@@ -129,6 +129,48 @@ input.error {
   padding: 10px;
 }
 
+.notification {
+  height: 100px;
+  width: 480px;
+  background-color: hsl(185, 24%, 22%);
+  position: relative;
+  margin: auto;
+  font-family: "Karla", sans-serif;
+  color: white;
+  border-radius: 10px;
+  visibility: hidden; /* Initially hidden */
+  opacity: 0; /* Fully transparent initially */
+  transform: translateY(20px); /* Move it down by 20px initially */
+  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s linear 0.5s; /* Smooth transition */
+}
+
+.notification.show {
+  visibility: visible; /* Make it visible */
+  opacity: 1; /* Fully opaque */
+  transform: translateY(0); /* Original position */
+  transition-delay: 0s; /* Reset delay for smooth transition */
+}
+
+.notification img {
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+
+.notification p {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  color: white;
+  justify-content: center;
+}
+
+.notification p,
+h3 {
+  position: relative;
+  left: 55px;
+  top: 15px;
+}
+
 h1 {
   font-family: "Karla", sans-serif;
   font-size: 2rem;
