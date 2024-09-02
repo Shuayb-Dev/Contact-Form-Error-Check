@@ -227,9 +227,7 @@ textarea {
 @media screen and (max-width: 500px) {
   .contact-form {
     width: 300px;
-    position: relative;
-    left: 80px;
-    bottom: 50px;
+    margin: auto;
     height: 1000px;
   }
 
